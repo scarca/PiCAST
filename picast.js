@@ -2,6 +2,8 @@ var sys = require('sys');
 var exec = require('child_process').exec;
 var express = require('express');
 var app = express();
+app.use(logger('dev')); 
+
 
 app.get('/', function (req, res) {
         res.send('Welcome to PiCAST 3! In the URL, type what you want to do...');

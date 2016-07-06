@@ -4,7 +4,6 @@ var express = require('express');
 var app = express();
 app.use(logger('dev')); 
 
-
 app.get('/', function (req, res) {
         res.send('Welcome to PiCAST 3! In the URL, type what you want to do...');
 });
@@ -13,6 +12,10 @@ app.get('/yt-stream/:url', function (req, res) {
         res.send('Streaming YouTube Video...');
         exec("livestreamer --player=mplayer https://www.youtube.com/watch?v=" + req.params.url + " best");
 });
+
+app.get('/screencast/', function(req, res){ 
+	res.send('connecting to screencasat at', req.ip) 
+	exec("livestreamer --player=mplayer 
 
 // Setup PiCAST Server
 var srv = app.listen(3000, function () {

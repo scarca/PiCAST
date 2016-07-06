@@ -16,8 +16,8 @@ app.get('/yt-stream/:url', function (req, res) {
 
 app.get('/screencast/', function(req, res){ 
 	res.send('connecting to screencasat at', req.ip) 
-	exec("livestreamer --player=mplayer 
-
+	exec("export DISPLAY=:0; vlc -vvv -f http://" + req.ip + ":10000"); 
+} 
 // Setup PiCAST Server
 var srv = app.listen(3000, function () {
         var host = srv.address().address;

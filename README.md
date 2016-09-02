@@ -1,3 +1,4 @@
+#NOTE: Project will not be updated due to the fact that the Ras-Pi's processor has trouble decoding VLC video streams fast enough for it to be useful in a real environment. Too much lag. 
 # PiCAST 3 (MICRO EDITION; STREAMING FIRST)
 PiCAST turns your $35 Raspberry Pi in to a Chromecast and beyond like Device.
 

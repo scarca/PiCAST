@@ -22,6 +22,5 @@ app.get('/screencast/', function(req, res){
 var srv = app.listen(3000, function () {
         var host = srv.address().address;
         var port = srv.address().port;
-
         console.log('Access at http://%s:%s', host, port);
 });
